@@ -14,6 +14,10 @@ alias la="ls -Gla"
 # List only directories
 alias lsd='ls -l | grep "^d"'
 
+#pushd popd
+alias pu='pushd'
+alias po='popd'
+
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
