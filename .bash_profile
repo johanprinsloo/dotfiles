@@ -66,7 +66,9 @@ alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 #Git hooks
 #source ~/.git-completion.bash
 
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}\007"'
+shopt -s histappend
+export HISTSIZE=10000
+export PROMPT_COMMAND='history -a;echo -ne "\033]0;${USER}@${HOSTNAME%%.*}\007"'
 
 export CLICOLOR=1
 #export LSCOLORS=Gxfxcxdxbxegedabagacad
