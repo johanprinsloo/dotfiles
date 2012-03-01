@@ -18,6 +18,9 @@ alias lsd='ls -l | grep "^d"'
 alias pu='pushd'
 alias po='popd'
 
+#sublime
+alias st='open -a "Sublime Text 2"'
+
 # Undo a `git push`
 alias undopush="git push -f origin HEAD^:master"
 
@@ -74,9 +77,9 @@ export CLICOLOR=1
 #export LSCOLORS=Gxfxcxdxbxegedabagacad
 export LSCOLORS=gxBxhxDxfxhxhxhxhxcxcx
 export EDITOR='mvim -f --nomru -c "au VimLeave * !open -a Terminal"'
-export SCALA_HOME=/Users/johanprinsloo/Progs/scala/
-export SBT_HOME=/Users/johanprinsloo/Progs/sbt/
-export EC2_HOME=/Users/johanprinsloo/Progs/ec2-api-tools-1.4.4.1/
+export SCALA_HOME=~/Progs/scala/
+export SBT_HOME=~/Progs/sbt/
+export EC2_HOME=~/Progs/ec2-api-tools-1.4.4.1/
 export JAVA_HOME=$(/usr/libexec/java_home)
 export M2_HOME=/usr/share/java/maven-3.0.3/
 
